@@ -5,6 +5,13 @@ All notable changes to this package are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.1] - 2026-08-29
+
+### Fixed
+- Added the missing `.meta` files for `package.json`, `README.md` and
+  `CHANGELOG.md`. Without them Unity logs "has no meta file, but it's in an
+  immutable folder. The asset will be ignored." for each on import.
+
 ## [0.6.0] - 2026-08-29
 
 ### Added
