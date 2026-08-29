@@ -5,6 +5,9 @@ namespace CrystalFlux.Core
 {
     public interface IStatusEffectReceiver
     {
+        GameObject DisplayPrefab { set; }
+        Transform DisplayContainer { set; }
+
         void Apply(EffectAsset effect, GameObject source, Vector2 location = default);
         void ClearAllEffects();
 

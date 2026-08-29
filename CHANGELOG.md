@@ -5,6 +5,20 @@ All notable changes to this package are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-08-29
+
+### Added
+- `IBossBar` — boss health bar contract (`Setup(string, IStatProvider)`), so wave
+  logic can drive a boss bar without referencing the entity system.
+- `EnemySpawning` — a spawn hook an entity system registers at startup, letting
+  other systems spawn enemies without a compile-time dependency on the spawner.
+- `PlayerEvents.OnPlayerTakeDamage` — player damage notification, relocated here
+  from the entity system's own static event.
+
+### Changed
+- `IStatusEffectReceiver` gains `DisplayPrefab` and `DisplayContainer` setters, so
+  a caller can configure effect-icon display without touching the concrete manager.
+
 ## [0.4.0] - 2026-08-29
 
 ### Added
