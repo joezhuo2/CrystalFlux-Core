@@ -1,0 +1,22 @@
+{
+  "name": "com.crystalflux.core",
+  "version": "0.1.0",
+  "displayName": "CrystalFlux Core",
+  "description": "Core gameplay contracts shared across CrystalFlux systems: damage instances/packets, stat and currency providers, team membership, unlockables, and the UI-facing announcer/tooltip interfaces.",
+  "unity": "2022.3",
+  "author": {
+    "name": "Joe Zhuo",
+    "email": "joezhuo08@gmail.com",
+    "url": "https://github.com/joezhuo2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joezhuo2/CrystalFlux-Core.git"
+  },
+  "keywords": [
+    "crystalflux",
+    "gameplay",
+    "core",
+    "interfaces"
+  ]
+}
