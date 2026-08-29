@@ -33,8 +33,10 @@ Runtime/
     CrystalFlux.Core.asmdef        # the only assembly in this package
     DamageInstance.cs
     DamagePacket.cs
+    DamageRoll.cs
     ICurrencyHolder.cs
     IOnHitEffect.cs
+    InputState.cs
     IStatProvider.cs
     IUnlockEffect.cs
     IUnlockRequirement.cs
@@ -47,12 +49,17 @@ Runtime/
         IKnockbackable.cs
         IResourcePool.cs
         ITeamMember.cs
+        IUpgradeHolder.cs
+        SummonCondition.cs
+        UpgradeAsset.cs
     ProjectileSystem/
-        IOrbitRegistrar.cs         # defines IOrbitRegister
+        AttackAsset.cs             # also defines AttackType
+        IAttackHandler.cs
         ISummonTrigger.cs
     SkillTree/
         ISkillPointHolder.cs
     StatusEffectSystem/
+        EffectAsset.cs
         IStatusEffectReceiver.cs
     UISystem/
         IAnnouncer.cs
@@ -78,6 +85,16 @@ Runtime/
   entity-state stats).
 - `StatBuff` — a `(StatType, value)` pair with display-name formatting and
   removal helper.
+- `DamageRoll` — crit rolling and `DamagePacket` construction from a source's
+  `IStatProvider`.
+- `InputState` — shared pointer position.
+- `AttackAsset` / `AttackType` / `IAttackHandler` — the abstract attack
+  ScriptableObject, its category enum, and the holder contract.
+- `EffectAsset` / `IStatusEffectReceiver` — the abstract effect ScriptableObject
+  and the contract for applying, querying, and removing effects on a target.
+- `UpgradeAsset` / `IUpgradeHolder` — the abstract upgrade ScriptableObject and
+  the holder contract.
+- `SummonCondition` — when a summon triggers.
 - `ResourceType` — `Stamina`, `Mana`.
 - `TypeSelectorAttribute` — property attribute for type-picker inspector drawers.
 - `IDamageable` — receive a `DamagePacket`, trigger i-frames, report alive

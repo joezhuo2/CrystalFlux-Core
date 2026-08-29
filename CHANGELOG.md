@@ -5,6 +5,29 @@ All notable changes to this package are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2026-08-29
+
+### Added
+- The remaining shared contracts from Anamnesis's `Assets/scripts/Core`, each of
+  which is consumed by two or more systems that do not reference one another and
+  therefore cannot live in any single system assembly:
+  `AttackAsset` (+ `AttackType`), `IAttackHandler`, `EffectAsset`,
+  `UpgradeAsset`, `IUpgradeHolder`, `SummonCondition`, `InputState`,
+  and `DamageRoll`.
+- `.meta` files for every asset and folder in the package, carrying the GUIDs
+  from the Anamnesis originals so references survive the move.
+
+### Fixed
+- `IStatusEffectReceiver` referred to `StatusEffect`, a concrete class that
+  lives downstream in Anamnesis's `CrystalFlux.StatusEffect` assembly and is not
+  visible from `CrystalFlux.Core` — the package could not compile. It now uses
+  `EffectAsset`, the Core-side base class it derives from.
+
+### Removed
+- `IOrbitRegistrar.cs` (`IOrbitRegister`). Its members took the concrete
+  `Projectile` MonoBehaviour, also downstream of Core and likewise uncompilable
+  here. It had no consumers.
+
 ## [0.3.0] - 2026-08-29
 
 ### Changed
