@@ -1,4 +1,4 @@
-namespace CrystalFlux.UISystem
+namespace CrystalFlux.Core
 {
     public interface IAnnouncer
     {

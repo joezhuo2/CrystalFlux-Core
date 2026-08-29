@@ -1,6 +1,4 @@
-using CrystalFlux.Core;
-
-namespace CrystalFlux.EntitySystem
+namespace CrystalFlux.Core
 {
     public interface IResourcePool
     {

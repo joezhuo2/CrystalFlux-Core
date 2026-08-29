@@ -1,4 +1,4 @@
-namespace CrystalFlux.SkillTree
+namespace CrystalFlux.Core
 {
     public interface ISkillPointHolder
     {

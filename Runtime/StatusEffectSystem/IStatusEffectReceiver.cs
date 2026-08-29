@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CrystalFlux.StatusEffectSystem
+namespace CrystalFlux.Core
 {
     public interface IStatusEffectReceiver
     {

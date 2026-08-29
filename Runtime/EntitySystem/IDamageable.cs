@@ -1,8 +1,7 @@
 using System;
-using CrystalFlux.Core;
 using UnityEngine;
 
-namespace CrystalFlux.EntitySystem
+namespace CrystalFlux.Core
 {
     public interface IDamageable
     {

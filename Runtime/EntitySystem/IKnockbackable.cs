@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CrystalFlux.EntitySystem
+namespace CrystalFlux.Core
 {
     public interface IKnockbackable
     {

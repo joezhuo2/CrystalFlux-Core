@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CrystalFlux.UISystem
+namespace CrystalFlux.Core
 {
     public interface ITooltipDisplay
     {

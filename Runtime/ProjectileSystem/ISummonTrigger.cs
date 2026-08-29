@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CrystalFlux.ProjectileSystem
+namespace CrystalFlux.Core
 {
     public interface ISummonTrigger
     {
