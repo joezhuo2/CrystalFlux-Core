@@ -1,6 +1,6 @@
 {
-    "name": "CrystalFlux.UISystem",
-    "rootNamespace": "CrystalFlux.UISystem",
+    "name": "CrystalFlux.ProjectileSystem",
+    "rootNamespace": "CrystalFlux.ProjectileSystem",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -1,6 +1,6 @@
 {
-    "name": "CrystalFlux.UISystem",
-    "rootNamespace": "CrystalFlux.UISystem",
+    "name": "CrystalFlux.StatusEffectSystem",
+    "rootNamespace": "CrystalFlux.StatusEffectSystem",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -1,6 +1,6 @@
 {
-    "name": "CrystalFlux.UISystem",
-    "rootNamespace": "CrystalFlux.UISystem",
+    "name": "CrystalFlux.SkillTree",
+    "rootNamespace": "CrystalFlux.SkillTree",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

@@ -1,7 +1,9 @@
 {
-    "name": "CrystalFlux.UISystem",
-    "rootNamespace": "CrystalFlux.UISystem",
-    "references": [],
+    "name": "CrystalFlux.EntitySystem",
+    "rootNamespace": "CrystalFlux.EntitySystem",
+    "references": [
+        "CrystalFlux.Core"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
