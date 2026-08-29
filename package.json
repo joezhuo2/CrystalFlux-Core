@@ -1,6 +1,6 @@
 {
   "name": "com.crystalflux.core",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "displayName": "CrystalFlux Core",
   "description": "Core gameplay contracts shared across CrystalFlux systems: damage, stats and currency, entity/team/damageable/knockback/resource contracts, projectile orbit/summon hooks, skill points, status effect receivers, and UI-facing announcer/tooltip interfaces.",
   "unity": "2022.3",

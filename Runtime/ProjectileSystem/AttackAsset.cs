@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace CrystalFlux.Core
@@ -10,5 +11,7 @@ namespace CrystalFlux.Core
 
         public abstract bool IsRuntimeCopy { get; }
         public abstract void DeepClone();
+        /// <summary>Appends human-readable description lines for this attack; the owning system decides what to show.</summary>
+        public abstract void GetTooltipLines(List<string> lines);
     }
 }
