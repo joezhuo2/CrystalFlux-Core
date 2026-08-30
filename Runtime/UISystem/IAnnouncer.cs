@@ -3,6 +3,8 @@ namespace CrystalFlux.Core
     public interface IAnnouncer
     {
         public static IAnnouncer Current { get; set; }
+        void SetTitle(string text);
+        void SetSubtitle(string text);
         void DisableTitle();
         void DisableSubtitle();
         void SetTitleForDuration(string text, float duration, float fadeIn, float fadeOut);

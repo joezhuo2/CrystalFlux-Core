@@ -107,7 +107,8 @@ Runtime/
 - `ISummonTrigger` — attempt to summon at a position.
 - `ISkillPointHolder` — hold, add, and spend skill points.
 - `IStatusEffectReceiver` — apply/clear/query/remove status effects by type.
-- `IAnnouncer` — show/hide timed title and subtitle banners.
+- `IAnnouncer` — set, show for a duration, and hide title and subtitle
+  banners.
 - `ITooltipDisplay` — show/hide a positioned tooltip.
 
 ## Known gaps
