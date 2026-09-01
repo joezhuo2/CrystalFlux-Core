@@ -5,6 +5,19 @@ All notable changes to this package are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.8.0] - 2026-08-31
+
+### Added
+
+- `StatType.castTimeRedPct` - percentage reduction applied to an attack's cast
+  time, consumed by `AttackData.GetEffCastTime`.
+- `StatType.interruptResist` - cumulative cast-interruption resistance tier.
+  `>= 1` ignores projectile hits, `>= 2` additionally ignores a mid-cast loss of
+  `CanAttack`. Death always interrupts.
+
+Both members are appended to the end of the `StatType` enum so existing
+serialized `StatBuff` assets keep their integer mappings.
+
 ## [0.7.0] - 2026-08-30
 
 ### Added

@@ -94,6 +94,8 @@ namespace CrystalFlux.Core
         EffDashStaminaCost,
         EffDashDistance,
         DashShouldApplyIFrame,
-        ArmorRes
+        ArmorRes,
+        castTimeRedPct,
+        interruptResist
     }
 }
