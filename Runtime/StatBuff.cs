@@ -93,6 +93,8 @@ namespace CrystalFlux.Core
                 StatType.basicCdRedPct =>       "Reduced Basic Cooldown %",
                 StatType.skillCdRedPct =>       "Reduced Skill Cooldown %",
                 StatType.ultCdRedPct =>         "Reduced Ultimate Cooldown %",
+                StatType.overhealth =>          "Overhealth",
+                StatType.healingPct =>          "Increased Healing %",
                 StatType.EffMaxMana =>          "Effective Max Mana",
                 StatType.EffMaxStamina =>       "Effective Max Stamina",
                 _ => type.ToString()

@@ -96,6 +96,8 @@ namespace CrystalFlux.Core
         DashShouldApplyIFrame,
         ArmorRes,
         castTimeRedPct,
-        interruptResist
+        interruptResist,
+        overhealth,
+        healingPct
     }
 }

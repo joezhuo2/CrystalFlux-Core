@@ -5,6 +5,20 @@ All notable changes to this package are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.9.0] - 2026-09-02
+
+### Added
+
+- `StatType.overhealth` - a pool of health held above `EffMaxHp`. It is spent
+  before `currentHp` when damage lands and is not clamped by max health, so the
+  consuming system owns how it is gained and how (or whether) it decays.
+- `StatType.healingPct` - percentage increase applied to incoming healing before
+  it is applied to health.
+- `StatBuff.ToString` names for both members ("Overhealth", "Increased Healing %").
+
+Both members are appended to the end of the `StatType` enum so existing
+serialized `StatBuff` assets keep their integer mappings.
+
 ## [0.8.0] - 2026-08-31
 
 ### Added
