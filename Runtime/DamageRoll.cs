@@ -17,7 +17,7 @@ namespace CrystalFlux.Core
 
         public static DamagePacket Build(float baseDamage, DamageType type, bool rollCrits, Color indicatorColor, GameObject owner, bool bypassIFrames, float sizeOverride)
         {
-            DamagePacket dp = new() { source = owner, bypassIFrames = bypassIFrames, sizeOverride = sizeOverride };
+            DamagePacket dp = DamagePacket.Get(owner, bypassIFrames, sizeOverride);
             if (!owner.TryGetComponent<IStatProvider>(out var esm) || baseDamage <= 0f) return dp;
 
             var (finalDamage, isCrit) = rollCrits ? RollCrits(baseDamage, esm.GetStat(StatType.critChance), esm.GetStat(StatType.critDamage)) : (baseDamage, false);

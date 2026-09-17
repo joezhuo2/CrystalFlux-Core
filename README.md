@@ -76,6 +76,8 @@ Runtime/
 
 - `DamageInstance` / `DamagePacket` — a single damage event and a batched set of
   events dealt together (crits, damage type, indicator color, source).
+  `DamagePacket.Get` / `DamagePacket.Release` rent and return packets from a
+  static pool; release a packet once `TakeDamage` has consumed it.
 - `ICurrencyHolder` — spend/add/query an integer currency balance.
 - `IOnHitEffect` — a projectile-hit effect hook.
 - `IStatProvider` — read a stat value and apply/remove stat buffs.

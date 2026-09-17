@@ -5,6 +5,27 @@ All notable changes to this package are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.0] - 2026-09-16
+
+### Added
+
+- `DamagePacket.Get(source, bypassIFrames, sizeOverride)` and
+  `DamagePacket.Release(packet)` - a static stack pool so the per-hit packet and
+  its `instances` list are reused instead of allocated. Nested hits (upgrade
+  triggers that deal damage while another packet is being consumed) pop a
+  different instance, so rent/release does not need to be strictly paired
+  across nesting levels. The pool keeps at most 64 packets, ignores a second
+  release of the same packet, and is cleared on subsystem registration.
+
+### Changed
+
+- `DamagePacket.instances` is preallocated with capacity 3 (one per
+  Physical/Spell/True instance).
+- `DamageRoll.Build` rents its packet from the pool. Callers that finish with
+  the packet should pass it to `DamagePacket.Release`; packets that are never
+  released are simply collected, as before. Do not keep a reference to a packet
+  after releasing it.
+
 ## [0.9.0] - 2026-09-02
 
 ### Added
