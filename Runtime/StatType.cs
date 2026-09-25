@@ -98,6 +98,7 @@ namespace CrystalFlux.Core
         castTimeRedPct,
         interruptResist,
         overhealth,
-        healingPct
+        healingPct,
+        rushImpactPct
     }
 }
