@@ -5,6 +5,19 @@ All notable changes to this package are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.12.0] - 2026-09-27
+
+### Added
+
+- `StatType.defense`, `defensePct`, `EffDefense` and `DefenseRes` - a flat
+  damage-reduction stat that applies to every damage type and uses the same
+  diminishing formula as armor (`100 / (value + 100)`).
+- `StatType.arcaneShield`, `arcaneShieldPct`, `EffArcaneShield` and
+  `ArcaneShieldRes` - the spell-damage counterpart of armor.
+- `StatBuff.ToString()` display names for the new flat and percentage stats.
+- All new members are appended to the end of the enum so existing serialized
+  `StatBuff` assets keep their integer mappings.
+
 ## [0.11.0] - 2026-09-25
 
 ### Added

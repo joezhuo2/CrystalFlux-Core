@@ -99,6 +99,14 @@ namespace CrystalFlux.Core
         interruptResist,
         overhealth,
         healingPct,
-        rushImpactPct
+        rushImpactPct,
+        defense,
+        defensePct,
+        EffDefense,
+        DefenseRes,
+        arcaneShield,
+        arcaneShieldPct,
+        EffArcaneShield,
+        ArcaneShieldRes
     }
 }
