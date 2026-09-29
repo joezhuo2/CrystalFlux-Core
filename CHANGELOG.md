@@ -5,6 +5,23 @@ All notable changes to this package are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.13.0] - 2026-09-29
+
+### Added
+
+- `DamagePacket.hasPenSnapshot`, `defShred` and `resPen` - lets a packet carry
+  the attacker's defense shred and resistance penetration captured at spawn
+  time, so damage is calculated from the snapshot instead of live stats.
+  Reset on `Get` and `Release`.
+- `PlayerEvents.OnPlayerDamaged` / `RaisePlayerDamaged` - raised for any
+  hostile damage the player takes, including damage-over-time ticks.
+  `OnPlayerTakeDamage` stays reserved for direct hits (hit feedback).
+
+### Fixed
+
+- `StatBuff.ToString()` labelled `stCostPct` as "Reduced Stamina Cost %", but
+  positive values increase stamina costs. It is now "Increased Stamina Cost %".
+
 ## [0.12.0] - 2026-09-27
 
 ### Added

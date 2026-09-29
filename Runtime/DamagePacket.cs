@@ -13,6 +13,9 @@ namespace CrystalFlux.Core
         public GameObject source;
         public bool bypassIFrames = false;
         public float sizeOverride = 1f;
+        public bool hasPenSnapshot;
+        public float defShred;
+        public float resPen;
         private bool pooled;
 
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
@@ -26,6 +29,9 @@ namespace CrystalFlux.Core
             dp.source = source;
             dp.bypassIFrames = bypassIFrames;
             dp.sizeOverride = sizeOverride;
+            dp.hasPenSnapshot = false;
+            dp.defShred = 0f;
+            dp.resPen = 0f;
             return dp;
         }
 
@@ -37,6 +43,9 @@ namespace CrystalFlux.Core
             dp.source = null;
             dp.bypassIFrames = false;
             dp.sizeOverride = 1f;
+            dp.hasPenSnapshot = false;
+            dp.defShred = 0f;
+            dp.resPen = 0f;
 
             if (pool.Count >= MaxPooled) return;
 

@@ -6,7 +6,9 @@ namespace CrystalFlux.Core
     public static class PlayerEvents
     {
         public static event Action<IDamageable> OnPlayerTakeDamage;
+        public static event Action<IDamageable> OnPlayerDamaged;
 
         public static void RaisePlayerTakeDamage(IDamageable player) => OnPlayerTakeDamage?.Invoke(player);
+        public static void RaisePlayerDamaged(IDamageable player) => OnPlayerDamaged?.Invoke(player);
     }
 }

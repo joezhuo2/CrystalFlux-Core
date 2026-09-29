@@ -80,7 +80,7 @@ namespace CrystalFlux.Core
                 StatType.Intelligence =>        "Intelligence",
                 StatType.IntPct =>              "Increased Intelligence %",
                 StatType.ProjSpd =>             "Increased Projectile Speed %",
-                StatType.stCostPct =>           "Reduced Stamina Cost %",
+                StatType.stCostPct =>           "Increased Stamina Cost %",
                 StatType.dashCooldownRedPct =>  "Reduced Dash Cooldown %",
                 StatType.dashDistancePct =>     "Increased Dash Distance %",
                 StatType.dashStaminaCostRedPct => "Reduced Dash Stamina Cost %",
